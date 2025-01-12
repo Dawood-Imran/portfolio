@@ -38,7 +38,7 @@ const Home = () => {
           <Linkedin size={24} color='#0077B5' />
         </a>
         
-        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/m.daud_09/?igsh=MTV3M210YnFidHE5aQ%3D%3D" target="_blank" rel="noopener noreferrer">
           <Instagram size={24} color="#E1306C"/>
         </a>
         <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
