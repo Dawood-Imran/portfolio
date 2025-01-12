@@ -1,0 +1,64 @@
+.about {
+  padding: 100px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container {
+  display: flex;
+  gap: 20px;
+  padding: 0 25px;
+}
+
+.about-card, .skills-card {
+  flex: 1;
+  background: var(--light-navy);
+  padding: 2rem 1.75rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.about-card:hover, .skills-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-card h2, .skills-card h2 {
+  font-size: 28px;
+  color: var(--white); /* Use white for the heading */
+  margin-bottom: 15px;
+}
+
+.about-card p, .skills-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--slate);
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-category {
+  margin-bottom: 10px;
+}
+
+.skill-category h3 {
+  font-size: 20px;
+  color: var(--white); /* Use white for the subheading */
+  margin-bottom: 5px;
+}
+
+.skill-category p {
+  font-size: 16px;
+  color: var(--light-slate);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+}

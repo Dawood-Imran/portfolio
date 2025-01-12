@@ -1,0 +1,10 @@
+.page-transition {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+  }
+  
+  .page-transition-active {
+    opacity: 0;
+  }
+  
+  

@@ -1,0 +1,157 @@
+.projects {
+  padding: 100px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.projects-container {
+  padding: 0 25px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.project-card {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-content {
+  position: relative;
+  height: 80%;
+  padding: 2rem 1.75rem;
+  border-radius: 4px;
+  background-color: var(--light-navy);
+  transition: transform 0.2s ease;
+}
+
+.project-content h3 {
+  margin: 0 0 10px;
+}
+
+.project-tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tech-list li {
+  background: var(--navy);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+.project-links a {
+  margin-right: 10px;
+  color: var(--green);
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: var(--lightest-slate);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--light-navy);
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar styles */
+.modal-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 10px;
+  border: 3px solid var(--white);
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background-color: var(--white);
+}
+
+.modal-content {
+  scrollbar-width: thin;
+  scrollbar-color: var(--navy) var(--light-navy);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--lightest-slate);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.project-features, .project-highlights {
+  margin-top: 20px;
+}
+
+.project-features h4, .project-highlights h4 {
+  margin-bottom: 10px;
+}
+
+.project-features ul, .project-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-features li, .project-highlights li {
+  margin-bottom: 10px;
+}
