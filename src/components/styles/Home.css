@@ -41,7 +41,7 @@
 .home-content p {
   margin: 20px 0 0;
   max-width: 540px;
-  color: var(--slate);
+  color: var (--slate);
   font-size: clamp(16px, 5vw, 20px);
   line-height: 1.5;
 }
@@ -58,8 +58,6 @@
 
 .button-container {
   margin-top: 50px;
-  display: flex;
-  justify-content: center;
 }
 
 .styled-button {
@@ -81,32 +79,13 @@
 }
 
 @media (max-width: 768px) {
-  .button-container {
-    margin-top: 30px;
-    justify-content: center; /* Ensure button stays centered */
-  }
-
-  .styled-button {
-    padding: 0.5rem 0.75rem;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .button-container {
-    margin-top: 20px;
-    justify-content: center; /* Ensure button stays centered */
-  }
-
-  .styled-button {
-    padding: 0.5rem 0.5rem;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 768px) {
   .home {
     padding: 0 50px;
+  }
+
+  .styled-button {
+    font-size: 14px;
+    padding: 0.5rem 0.75rem;
   }
 }
 
@@ -114,13 +93,25 @@
   .home {
     padding: 0 25px;
   }
+
+  .styled-button {
+    font-size: 12px;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+.connect-links-container {
+  position: fixed;
+  right: 0%;
+  top: 48%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid var(--lightest-slate);
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .connect-links {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;

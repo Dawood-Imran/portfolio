@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
-import { Github, Linkedin, Instagram, Facebook } from 'lucide-react';
+
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import './styles/Home.css';
 
 const Home = () => {
@@ -30,20 +31,21 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className="connect-links" >
-        <a href="https://github.com/Dawood-Imran" target="_blank" rel="noopener noreferrer">
-          <Github size={24} color='white' />
-        </a>
-        <a href="https://www.linkedin.com/in/muhammad-dawood-imran/" target="_blank" rel="noopener noreferrer">
-          <Linkedin size={24} color='#0077B5' />
-        </a>
-        
-        <a href="https://www.instagram.com/m.daud_09/?igsh=MTV3M210YnFidHE5aQ%3D%3D" target="_blank" rel="noopener noreferrer">
-          <Instagram size={24} color="#E1306C"/>
-        </a>
-        <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
-          <Facebook size={24} color="#1877F2" />
-        </a>
+      <div className="connect-links-container">
+        <div className="connect-links">
+          <a href="https://github.com/Dawood-Imran" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={24} color='#333' />
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-dawood-imran/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={24} color='#0077B5' />
+          </a>
+          <a href="https://www.instagram.com/m.daud_09/?igsh=MTV3M210YnFidHE5aQ%3D%3D" target="_blank" rel="noopener noreferrer">
+            <FaInstagram size={24} color="#E1306C"/>
+          </a>
+          <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <FaFacebook size={24} color="#1877F2" />
+          </a>
+        </div>
       </div>
     </section>
   );
