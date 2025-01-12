@@ -25,11 +25,7 @@ const Home = () => {
         <p>
           Transforming data into innovation through clean code and machine learning. Building solutions that make an impact in the real world.
         </p>
-        <div className="button-container">
-          <Link to="/projects" className="styled-button">
-            View My Work
-          </Link>
-        </div>
+        
       </div>
       <div className="connect-links-container">
         <div className="connect-links">
