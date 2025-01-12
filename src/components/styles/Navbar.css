@@ -79,7 +79,7 @@
 }
 
 .active-link {
-  color: var(--green);
+  color: var (--green);
   font-weight: bold;
   border-bottom: 2px solid var(--green); /* Add underline to active link */
 }
@@ -147,5 +147,9 @@
 
   .menu-icon {
     display: block;
+  }
+
+  .navbar-container {
+    justify-content: space-between;
   }
 }
