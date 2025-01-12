@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, Instagram, Facebook } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaMailBulk, FaInstagram, FaFacebook } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 import './styles/Contact.css';
 
@@ -34,19 +34,19 @@ const Contact = () => {
         <h2 className="numbered-heading">Get In Touch</h2>
         <div className="contact-content">
           <div className="contact-text">
-            <p>
+            <p className="contact-text-p">
               I'm currently looking for new opportunities. Whether you have a question
               or just want to say hi, I'll try my best to get back to you!
             </p>
-
             <h1 className="email-text">
-              Send me an email
+              Send me an email 
             </h1>
             <form onSubmit={handleSubmit} className="contact-form">
               <label htmlFor="name">Name</label>
               <input
                 type="text"
                 name="name"
+                id="name"
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
@@ -56,6 +56,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
+                id="email"
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
@@ -64,6 +65,7 @@ const Contact = () => {
               <label htmlFor="message">Message</label>
               <textarea
                 name="message"
+                id="message"
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={handleChange}
@@ -74,20 +76,19 @@ const Contact = () => {
           </div>
           <div className="social-links">
             <div className="social-item">
-              <Github size={30} color='white' />
+              <FaGithub size={24} color='white'/>
               <a href="https://github.com/Dawood-Imran" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
             <div className="social-item">
-              <Linkedin size={30} color='#0077B5' />
+              <FaLinkedin size={24} color='#0077B5' />
               <a href="https://linkedin.com/in/muhammad-dawood-imran" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-            
             <div className="social-item">
-              <Instagram size={30} color="#E1306C" />
+              <FaInstagram size={24} color="#E1306C" />
               <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
             <div className="social-item">
-              <Facebook size={30} color="#1877F2" />
+              <FaFacebook size={24} color="#1877F2" />
               <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
           </div>
