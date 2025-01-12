@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
-import { Github, Linkedin, Mail, Instagram, Facebook } from 'lucide-react';
+import { Github, Linkedin, Instagram, Facebook } from 'lucide-react';
 import './styles/Home.css';
 
 const Home = () => {

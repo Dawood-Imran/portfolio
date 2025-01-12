@@ -2,59 +2,65 @@
   padding: 100px 0;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 .about-container {
   display: flex;
   gap: 20px;
   padding: 0 25px;
+  flex-wrap: wrap;
 }
 
-.about-card, .skills-card {
+.about-card {
+  flex: 0 1 auto;
+  background: var(--light-navy);
+  padding: 1.5rem 1.25rem; 
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  height: auto; 
+}
+
+
+/* About and Skills Cards: Same Styling */
+
+.skills-card {
   flex: 1;
   background: var(--light-navy);
   padding: 2rem 1.75rem;
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
+  height: auto; /* Dynamic height */
 }
 
 .about-card:hover, .skills-card:hover {
   transform: translateY(-5px);
 }
 
+
 .about-card h2, .skills-card h2 {
   font-size: 28px;
-  color: var(--white); /* Use white for the heading */
+  color: var(--white);
   margin-bottom: 15px;
 }
 
-.about-card p, .skills-card p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--slate);
-  margin-bottom: 20px;
-}
-
-.skills-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.skill-category {
-  margin-bottom: 10px;
-}
-
+/* Skill Category Headings with Icons */
 .skill-category h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 20px;
-  color: var(--white); /* Use white for the subheading */
+  color: var(--white);
   margin-bottom: 5px;
 }
 
 .skill-category p {
   font-size: 16px;
+  line-height: 1.6;
   color: var(--light-slate);
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
