@@ -35,14 +35,15 @@ const projects = [
   {
     "title": "Wine Quality Prediction",
     "description": "This project aims to predict the quality of wine based on various chemical properties using machine learning techniques. The dataset used contains information about different types of wine and their respective quality ratings.",
-    "tech": ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
+    "tech": ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Flask"],
     "github": "https://github.com/Dawood-Imran/wine-quality-prediction",
     "live": null,  
     "keyHighlights": [
-      "Preprocessed the dataset to handle missing values and normalize features.",
-      "Implemented various machine learning models including Linear Regression, Decision Trees, and Random Forests.",
-      "Evaluated model performance using metrics such as accuracy, precision, recall, and F1-score.",
-      "Visualized the distribution of wine quality and the relationship between chemical properties and quality using various plots."
+      "Performed data preprocessing, including handling missing values, encoding categorical variables, and feature scaling.",
+      "Implemented a Elastic Net regression model to predict wine quality based on chemical properties.",
+      "Created the training pipeline to fit the model and evaluate its performance using metrics such as mean squared error and R-squared.",
+      "Created the testing pipeline to make predictions on new data and assess the model's generalization ability.",
+      "Created a Flask web application to allow users to input wine characteristics and receive quality predictions."
     ],
     "image": wine
   },
