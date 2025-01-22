@@ -38,7 +38,7 @@ const Home = () => {
           <a href="https://www.instagram.com/m.daud_09/?igsh=MTV3M210YnFidHE5aQ%3D%3D" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={24} color="#E1306C"/>
           </a>
-          <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/people/Daud-Imran/pfbid0SUM7RqrfmhdbZjqJc5Fcy1hoC3a6qS4w3stu6g5SMxYRiVKVnqE6cFMDJkYqq8Hgl/?rdid=bGjtQMV0EGG1VfKj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AxtVHakur%2F" target="_blank" rel="noopener noreferrer">
             <FaFacebook size={24} color="#1877F2" />
           </a>
         </div>

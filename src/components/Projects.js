@@ -3,6 +3,7 @@ import { Github, ExternalLink } from 'lucide-react';
 import './styles/Projects.css';
 import img from '../assets/images/sample.jpg';
 import psl from '../assets/images/psl.png';
+import wine from '../assets/images/image.png';
 
 const projects = [
   {
@@ -30,6 +31,20 @@ const projects = [
       "Visualized key findings using bar plots, scatter plots, and histograms."
     ],
     "image": psl  // Replace with path to your image file
+  },
+  {
+    "title": "Wine Quality Prediction",
+    "description": "This project aims to predict the quality of wine based on various chemical properties using machine learning techniques. The dataset used contains information about different types of wine and their respective quality ratings.",
+    "tech": ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
+    "github": "https://github.com/Dawood-Imran/wine-quality-prediction",
+    "live": null,  
+    "keyHighlights": [
+      "Preprocessed the dataset to handle missing values and normalize features.",
+      "Implemented various machine learning models including Linear Regression, Decision Trees, and Random Forests.",
+      "Evaluated model performance using metrics such as accuracy, precision, recall, and F1-score.",
+      "Visualized the distribution of wine quality and the relationship between chemical properties and quality using various plots."
+    ],
+    "image": wine
   },
   {
     title: "Web Scraping and EDA",
