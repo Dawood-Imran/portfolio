@@ -99,6 +99,25 @@
     padding: 0.5rem 0.75rem;
     
   }
+
+  .connect-links-container {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .connect-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .connect-links a {
+    margin: 5px 10px; /* Adjust margin for spacing between links */
+  }
 }
 
 .connect-links-container {

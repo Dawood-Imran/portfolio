@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 import './styles/Projects.css';
 import img from '../assets/images/sample.jpg';
+import psl from '../assets/images/psl.png';
 
 const projects = [
   {
@@ -15,6 +16,20 @@ const projects = [
       "Deployed the model as a web application using Streamlit framework, allowing users to input their preferences and receive movie suggestions."
     ],
     image: img
+  },
+  {
+    "title": "Pakistan Super League (PSL) Batting Analysis",
+    "description": "This project analyzes the batting performance of players in the Pakistan Super League (PSL) using a provided dataset to extract insights into player and team performance.",
+    "tech": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+    "github": "https://github.com/Dawood-Imran/PSL-Data-Set-Analysis/", 
+    "live": null,  // If you have deployed the project somewhere, include the link here
+    "keyHighlights": [
+      "Identified top players based on batting averages, strike rates, and centuries.",
+      "Determined the team with the highest average number of runs per player.",
+      "Investigated the correlation between innings played, runs scored, and strike rates.",
+      "Visualized key findings using bar plots, scatter plots, and histograms."
+    ],
+    "image": psl  // Replace with path to your image file
   },
   {
     title: "Web Scraping and EDA",
@@ -64,7 +79,8 @@ const projects = [
       "Evaluated model performance using accuracy, precision, and recall metrics."
     ],
     image: img
-  }
+  },
+  
 ];
 
 const Projects = () => {

@@ -7,8 +7,8 @@
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #34c759;
-  --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-  --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  --font-sans: "Jura","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  --font-mono: "Jura","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
 body {

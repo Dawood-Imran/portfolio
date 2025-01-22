@@ -34,13 +34,10 @@ const Contact = () => {
         <h2 className="numbered-heading">Get In Touch</h2>
         <div className="contact-content">
           <div className="contact-text">
-            <p className="contact-text-p">
+            <p>
               I'm currently looking for new opportunities. Whether you have a question
               or just want to say hi, I'll try my best to get back to you!
             </p>
-            <h1 className="email-text">
-              Send me an email 
-            </h1>
             <form onSubmit={handleSubmit} className="contact-form">
               <label htmlFor="name">Name</label>
               <input
