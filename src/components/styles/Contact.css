@@ -16,7 +16,14 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  margin-top: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  align-self: flex-start;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--lightest-slate);
 }
 
 
