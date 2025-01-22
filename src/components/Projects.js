@@ -7,18 +7,20 @@ import wine from '../assets/images/image.png';
 
 const projects = [
   {
-    title: "Movie Recommendation System",
-    description: "Created a content-based machine learning model using cosine similarity to recommend movies based on genre, directors, and actors.",
-    tech: ["Python", "Pandas", "Streamlit", "scikit-learn"],
-    github: "https://github.com/yourusername/movie-recommendation",
-    live: "https://movierecommendation.example.com",
-    features: [
-      "Utilized natural language processing techniques to parse and vectorize movie descriptions and metadata.",
-      "Deployed the model as a web application using Streamlit framework, allowing users to input their preferences and receive movie suggestions."
+    title: "Malware Detection Using Smart Home Network Traffic",
+    description: "A machine learning project focused on detecting malware in IoT networks using smart home traffic data.",
+    tech: ["Python", "Scikit-Learn", "Pandas"],
+    github: "https://github.com/yourusername/malware-detection",
+    live: "https://malwaredetection.example.com",
+    keyHighlights: [
+      "Used a real-world smart home dataset for analysis.",
+      "Applied Decision Tree and Random Forest models for classification.",
+      "Evaluated model performance using accuracy, precision, and recall metrics."
     ],
     image: img
   },
-  {
+
+    {
     "title": "Pakistan Super League (PSL) Batting Analysis",
     "description": "This project analyzes the batting performance of players in the Pakistan Super League (PSL) using a provided dataset to extract insights into player and team performance.",
     "tech": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
@@ -80,19 +82,6 @@ const projects = [
       "Automated scraping of job titles, descriptions, locations, and company names.",
       "Data is cleaned, structured, and exported for further analysis.",
       "This project showcases proficiency in data scraping and manipulation."
-    ],
-    image: img
-  },
-  {
-    title: "Malware Detection Using Smart Home Network Traffic",
-    description: "A machine learning project focused on detecting malware in IoT networks using smart home traffic data.",
-    tech: ["Python", "Scikit-Learn", "Pandas"],
-    github: "https://github.com/yourusername/malware-detection",
-    live: "https://malwaredetection.example.com",
-    keyHighlights: [
-      "Used a real-world smart home dataset for analysis.",
-      "Applied Decision Tree and Random Forest models for classification.",
-      "Evaluated model performance using accuracy, precision, and recall metrics."
     ],
     image: img
   },
