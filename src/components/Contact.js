@@ -17,13 +17,14 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('service_vcqghpp', 'template_52zduls', e.target, 'pFdV8y_Tzs75kIZoj')
       .then((result) => {
         console.log(result.text);
         alert('Message sent successfully!');
       }, (error) => {
         console.log(error.text);
         alert('Failed to send message. Please try again.');
+        
       });
     e.target.reset();
   };
@@ -72,7 +73,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
               ></textarea>
-              <button type="submit" className="styled-button">Send Email</button>
+              <button type="submit" className="styled-button" >Send Email</button>
             </form>
           </div>
           <div className="social-links">
