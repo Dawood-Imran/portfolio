@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#0c0c0c"/>
+  <!-- Terminal prompt: > _ -->
+  <!-- ">" arrow -->
+  <rect x="4" y="10" width="3" height="3" fill="#00ff41"/>
+  <rect x="7" y="13" width="3" height="3" fill="#00ff41"/>
+  <rect x="7" y="7" width="3" height="3" fill="#00ff41"/>
+  <rect x="10" y="10" width="3" height="3" fill="#00ff41"/>
+  <!-- cursor block -->
+  <rect x="15" y="10" width="6" height="10" fill="#00ff41"/>
+</svg>
