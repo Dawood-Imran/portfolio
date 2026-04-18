@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './styles/Home.css';
@@ -11,11 +10,12 @@ const Home = () => {
         <h1>— Hi, I am —</h1>
         <h2 className="big-heading">Dawood Imran.</h2>
         <h3 className="big-heading typewriter">
+          <span className="t-prompt-home">&gt;&nbsp;</span>
           <Typewriter
-            words={['Software Engineer', 'Data Scientist', 'Data Analyst']}
+            words={['Software_Engineer', 'Data_Scientist', 'Data_Analyst']}
             loop={0}
             cursor
-            cursorStyle='|'
+            cursorStyle='_'
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1000}

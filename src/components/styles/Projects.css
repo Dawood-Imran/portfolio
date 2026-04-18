@@ -1,10 +1,9 @@
 .projects {
-  padding: 100px 0;
+  padding: 100px 40px;
   max-width: 1400px;
   margin: 0 auto;
   margin-top: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  box-sizing: border-box;
 }
 
 .projects-container {
@@ -141,9 +140,9 @@
   background: var(--light-navy);
   padding: 30px;
   max-width: 600px;
-  width: 100%;
+  width: calc(100% - 32px);
   position: relative;
-  max-height: 80vh;
+  max-height: 85vh;
   overflow-y: auto;
   border: 2px solid var(--green);
   clip-path: polygon(
@@ -245,3 +244,115 @@
 .project-highlights li {
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  .projects {
+    padding: 80px 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-content h3 {
+    font-size: 12px;
+  }
+
+  .project-content p {
+    font-size: 18px;
+  }
+
+  .project-tech-list li {
+    font-size: 16px;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-content h3 {
+    font-size: 12px;
+  }
+
+  .modal-content p,
+  .modal-content li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 80px 12px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .project-content {
+    padding: 1.25rem 1rem;
+  }
+}
+
+/* ── Terminal topbar on project cards ── */
+.project-content {
+  overflow: hidden;
+}
+
+.proj-topbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--lightest-navy);
+  padding: 10px 16px;
+  margin: -2rem -1.75rem 0;
+}
+
+.proj-filename {
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  color: var(--light-slate);
+  margin-left: 8px;
+  -webkit-font-smoothing: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.proj-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 16px;
+}
+
+.proj-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.proj-title-row .t-prompt {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: var(--green);
+  margin-top: 4px;
+  flex-shrink: 0;
+  -webkit-font-smoothing: none;
+}
+
+.proj-title-row h3 {
+  margin: 0;
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.terminal-dot.red    { background: #ff5f56; }
+.terminal-dot.yellow { background: #ffbd2e; }
+.terminal-dot.tgreen { background: var(--green); }

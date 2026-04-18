@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Github, ExternalLink } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
+import { ExternalLink } from 'lucide-react';
 import './styles/Projects.css';
 import img from '../assets/images/sample.jpg';
 import psl from '../assets/images/psl.png';
@@ -109,24 +110,37 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className="project-card" onClick={() => openModal(project)}>
             <div className="project-content">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <ul className="project-tech-list">
-                {project.tech.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-              <div className="project-links">
-                {project.github && (
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                    <Github size={20} />
-                  </a>
-                )}
-                {project.live && (
-                  <a href={project.live} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                    <ExternalLink size={20} />
-                  </a>
-                )}
+              <div className="proj-topbar">
+                <span className="terminal-dot red" />
+                <span className="terminal-dot yellow" />
+                <span className="terminal-dot tgreen" />
+                <span className="proj-filename">
+                  {project.title.toLowerCase().replace(/\s+/g, '_').slice(0, 24)}.py
+                </span>
+              </div>
+              <div className="proj-body">
+                <div className="proj-title-row">
+                  <span className="t-prompt">&gt;</span>
+                  <h3>{project.title}</h3>
+                </div>
+                <p>{project.description}</p>
+                <ul className="project-tech-list">
+                  {project.tech.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+                <div className="project-links">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                      <FaGithub size={20} />
+                    </a>
+                  )}
+                  {project.live && (
+                    <a href={project.live} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
