@@ -123,6 +123,19 @@
   background-color: rgba(100, 255, 218, 0.1);
 }
 
+.resume-button.resume-downloading {
+  opacity: 0.7;
+  cursor: wait;
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+
+.resume-button.resume-done {
+  color: var(--green);
+  border-color: var(--green);
+  background-color: rgba(0, 255, 65, 0.1);
+}
+
 .menu-icon {
   display: none;
   cursor: pointer;

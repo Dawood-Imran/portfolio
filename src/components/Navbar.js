@@ -6,18 +6,20 @@ import './styles/Navbar.css';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [resumeState, setResumeState] = useState('idle');
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const downloadResume = () => {
+    setResumeState('downloading');
     const link = document.createElement('a');
-    link.href = require('../Dawood_Resume.pdf'); // Adjust the path as needed
+    link.href = require('../Dawood_Resume.pdf');
     link.download = 'Dawood_Imran_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    setTimeout(() => setResumeState('done'), 800);
+    setTimeout(() => setResumeState('idle'), 2800);
   };
 
   return (
@@ -44,8 +46,8 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ol>
-          <button onClick={downloadResume} className="resume-button">
-            Resume
+          <button onClick={downloadResume} className={`resume-button ${resumeState !== 'idle' ? 'resume-' + resumeState : ''}`}>
+            {resumeState === 'downloading' ? '[ loading... ]' : resumeState === 'done' ? '[ downloaded! ]' : 'Resume'}
           </button>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>

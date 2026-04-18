@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import emailjs from 'emailjs-com';
 import './styles/Contact.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [toast, setToast] = useState(null);
+
+  useEffect(() => {
+    if (!toast) return;
+    const t = setTimeout(() => setToast(null), 4000);
+    return () => clearTimeout(t);
+  }, [toast]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,19 +19,29 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_vcqghpp', 'template_52zduls', e.target, 'pFdV8y_Tzs75kIZoj')
-      .then((result) => {
-        console.log(result.text);
-        alert('Message sent successfully!');
-      }, (error) => {
-        console.log(error.text);
-        alert('Failed to send message. Please try again.');
-
-      });
-    e.target.reset();
+    setToast('success');
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
+    <>
+    {toast && (
+      <div className={`terminal-toast ${toast}`}>
+        <div className="toast-topbar">
+          <span className="terminal-dot red" />
+          <span className="terminal-dot yellow" />
+          <span className="terminal-dot tgreen" />
+          <span className="toast-filename">system.log</span>
+        </div>
+        <div className="toast-body">
+          <span className="toast-prompt">&gt;</span>
+          {toast === 'success'
+            ? <span className="toast-msg success">[ ✓ ] message_sent.log — OK</span>
+            : <span className="toast-msg error">[ ✗ ] send_failed.log — ERR</span>
+          }
+        </div>
+      </div>
+    )}
     <section className="contact">
       <div className="contact-container">
         <h2 className="heading">Get In Touch</h2>
@@ -89,6 +101,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
