@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
-
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './styles/Home.css';
 
 const Home = () => {
   return (
     <section className="home">
       <div className="home-content">
-        <h1>Welcome to My Portfolio</h1>
-        <h2 className="big-heading">Muhammad Dawood Imran.</h2>
+        <h1>— Hi, I am —</h1>
+        <h2 className="big-heading">Dawood Imran.</h2>
         <h3 className="big-heading typewriter">
           <Typewriter
             words={['Software Engineer', 'Data Scientist', 'Data Analyst']}
@@ -25,22 +24,22 @@ const Home = () => {
         <p>
           Transforming data into innovation through clean code and machine learning. Building solutions that make an impact in the real world.
         </p>
-        
-      </div>
-      <div className="connect-links-container">
-        <div className="connect-links">
-          <a href="https://github.com/Dawood-Imran" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={24} color='#333' />
-          </a>
-          <a href="https://www.linkedin.com/in/muhammad-dawood-imran/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={24} color='#0077B5' />
-          </a>
-          <a href="https://www.instagram.com/m.daud_09/?igsh=MTV3M210YnFidHE5aQ%3D%3D" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={24} color="#E1306C"/>
-          </a>
-          <a href="https://www.facebook.com/people/Daud-Imran/pfbid0SUM7RqrfmhdbZjqJc5Fcy1hoC3a6qS4w3stu6g5SMxYRiVKVnqE6cFMDJkYqq8Hgl/?rdid=bGjtQMV0EGG1VfKj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AxtVHakur%2F" target="_blank" rel="noopener noreferrer">
-            <FaFacebook size={24} color="#1877F2" />
-          </a>
+        <div className="social-section">
+          <div className="social-label">
+            <span className="social-line" />
+            <span className="social-label-text">&gt; connect_with_me</span>
+            <span className="social-line" />
+          </div>
+          <div className="social-icons">
+            <a href="https://github.com/Dawood-Imran" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={28} color="white" />
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-dawood-imran/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={28} color="#0077B5" />
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

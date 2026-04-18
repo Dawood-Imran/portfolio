@@ -2,6 +2,7 @@ import React, { useTransition, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import PixelCursor from './components/PixelCursor';
 import About from './components/About';
 
 import Projects from './components/Projects';
@@ -27,6 +28,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <PixelCursor />
         <Navbar />
         <Suspense fallback={<div>Loading...</div>}>
           <PageTransition>

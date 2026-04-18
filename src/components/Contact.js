@@ -24,7 +24,7 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
         alert('Failed to send message. Please try again.');
-        
+
       });
     e.target.reset();
   };
@@ -33,7 +33,7 @@ const Contact = () => {
     <section className="contact">
       <div className="contact-container">
         <h2 className="heading">Get In Touch</h2>
-        
+
         <div className="contact-content">
           <div className="contact-text">
             <p>
@@ -78,20 +78,12 @@ const Contact = () => {
           </div>
           <div className="social-links">
             <div className="social-item">
-              <FaGithub size={24} color='white'/>
+              <FaGithub size={24} color='white' />
               <a href="https://github.com/Dawood-Imran" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
             <div className="social-item">
               <FaLinkedin size={24} color='#0077B5' />
               <a href="https://linkedin.com/in/muhammad-dawood-imran" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-            <div className="social-item">
-              <FaInstagram size={24} color="#E1306C" />
-              <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </div>
-            <div className="social-item">
-              <FaFacebook size={24} color="#1877F2" />
-              <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
           </div>
         </div>

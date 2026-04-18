@@ -1,6 +1,9 @@
 import React from 'react';
-import { FaPython, FaDatabase, FaCode, FaTools, FaChartBar } from 'react-icons/fa';
-import { SiJavascript, SiR, SiHtml5, SiCss3, SiJupyter } from 'react-icons/si';
+import { Terminal } from 'pixelarticons/react/Terminal.js';
+import { ChartBarBig } from 'pixelarticons/react/ChartBarBig.js';
+import { Cpu } from 'pixelarticons/react/Cpu.js';
+import { ToolCase } from 'pixelarticons/react/ToolCase.js';
+import { Database } from 'pixelarticons/react/Database.js';
 import './styles/About.css';
 
 const About = () => {
@@ -24,7 +27,7 @@ const About = () => {
           {/* Languages */}
           <div className="skill-category">
             <h3>
-              <FaCode color="#f34b7d" /> Languages
+              <Terminal className="pixel-icon" /> Languages
             </h3>
             <p>Python, SQL, C/C++, HTML/CSS, JavaScript, R</p>
           </div>
@@ -32,7 +35,7 @@ const About = () => {
           {/* Analytical Skills */}
           <div className="skill-category">
             <h3>
-              <FaChartBar color="#ff6384" /> Analytical Skills
+              <ChartBarBig className="pixel-icon" /> Analytical Skills
             </h3>
             <p>Data cleaning, processing, and visualization, extracting insights and identifying trends</p>
           </div>
@@ -40,7 +43,7 @@ const About = () => {
           {/* AI */}
           <div className="skill-category">
             <h3>
-              <FaCode color="#ff6384" /> AI
+              <Cpu className="pixel-icon" /> AI
             </h3>
             <p>Machine Learning, Natural Language Processing</p>
           </div>
@@ -48,7 +51,7 @@ const About = () => {
           {/* Developer Tools */}
           <div className="skill-category">
             <h3>
-              <FaTools color="#ff6384" /> Developer Tools
+              <ToolCase className="pixel-icon" /> Developer Tools
             </h3>
             <p>Git, VsCode, Jupyter Notebook</p>
           </div>
@@ -56,7 +59,7 @@ const About = () => {
           {/* Data Visualization Tools */}
           <div className="skill-category">
             <h3>
-              <FaChartBar color="#ff6384" /> Data Visualization Tools
+              <Database className="pixel-icon" /> Data Visualization Tools
             </h3>
             <p>Excel, Power BI</p>
           </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { Menu } from 'pixelarticons/react/Menu.js';
+import { Cancel } from 'pixelarticons/react/Cancel.js';
 import './styles/Navbar.css';
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = require('../resume.pdf'); // Adjust the path as needed
+    link.href = require('../Dawood_Resume.pdf'); // Adjust the path as needed
     link.download = 'Dawood_Imran_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -48,7 +49,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
-          {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          {menuOpen ? <Cancel className="pixel-nav-icon" /> : <Menu className="pixel-nav-icon" />}
         </div>
       </div>
     </nav>

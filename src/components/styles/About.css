@@ -15,35 +15,46 @@
 .about-card {
   flex: 0 1 auto;
   background: var(--light-navy);
-  padding: 1.5rem 1.25rem; 
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-  height: auto; 
+  padding: 1.5rem 1.25rem;
+  border: 2px solid var(--lightest-navy);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  height: auto;
+  clip-path: polygon(
+    0 12px, 12px 0,
+    calc(100% - 12px) 0, 100% 12px,
+    100% calc(100% - 12px), calc(100% - 12px) 100%,
+    12px 100%, 0 calc(100% - 12px)
+  );
 }
-
-
-/* About and Skills Cards: Same Styling */
 
 .skills-card {
   flex: 1;
   background: var(--light-navy);
   padding: 2rem 1.75rem;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-  height: auto; /* Dynamic height */
+  border: 2px solid var(--lightest-navy);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  height: auto;
+  clip-path: polygon(
+    0 12px, 12px 0,
+    calc(100% - 12px) 0, 100% 12px,
+    100% calc(100% - 12px), calc(100% - 12px) 100%,
+    12px 100%, 0 calc(100% - 12px)
+  );
 }
 
 .about-card:hover, .skills-card:hover {
   transform: translateY(-5px);
+  border-color: var(--green);
 }
 
 
 .about-card h2, .skills-card h2 {
-  font-size: 28px;
+  font-family: var(--font-pixel);
+  font-size: 22px;
   color: var(--white);
   margin-bottom: 15px;
+  -webkit-font-smoothing: none;
+  text-shadow: 2px 2px 0px rgba(52, 199, 89, 0.2);
 }
 
 /* Skill Category Headings with Icons */
@@ -51,16 +62,36 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 20px;
-  color: var(--white);
+  font-family: var(--font-pixel);
+  font-size: 15px;
+  color: var(--green);
   margin-bottom: 5px;
+  -webkit-font-smoothing: none;
 }
 
 .skill-category p {
-  font-size: 16px;
-  line-height: 1.6;
+  font-family: var(--font-retro);
+  font-size: 24px;
+  line-height: 1.5;
   color: var(--light-slate);
   margin-bottom: 20px;
+  -webkit-font-smoothing: none;
+}
+
+.about-card p {
+  font-family: var(--font-retro);
+  font-size: 24px;
+  line-height: 1.6;
+  color: var(--light-slate);
+  -webkit-font-smoothing: none;
+}
+
+.pixel-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--green);
+  image-rendering: pixelated;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {

@@ -19,11 +19,14 @@
 }
 
 .heading {
-  font-size: 2rem;
+  font-family: var(--font-pixel);
+  font-size: 1.8rem;
   align-self: flex-start;
   font-weight: bold;
   margin-bottom: 1rem;
   color: var(--lightest-slate);
+  -webkit-font-smoothing: none;
+  text-shadow: 2px 2px 0px rgba(52, 199, 89, 0.2);
 }
 
 
@@ -35,17 +38,19 @@
 
 .contact-text p{
   color: var(--slate);
-  font-size: 20px;
+  font-family: var(--font-retro);
+  font-size: 26px;
   line-height: 1.6;
   margin-bottom: 50px;
+  -webkit-font-smoothing: none;
 }
 
 .email-text {
-
   color: var(--green);
-  font-size: 26px;
-  line-height: 1.6;
-  
+  font-family: var(--font-pixel);
+  font-size: 20px;
+  line-height: 1.8;
+  -webkit-font-smoothing: none;
 }
 
 .contact-form {
@@ -58,19 +63,35 @@
 
 .contact-form label {
   color: var(--lightest-slate);
-  font-size: 16px;
+  font-family: var(--font-pixel);
+  font-size: 14px;
   margin-bottom: 5px;
+  -webkit-font-smoothing: none;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid var(--lightest-slate);
-  border-radius: 4px;
+  padding: 10px 14px;
+  border: 2px solid var(--lightest-navy);
   background-color: var(--light-navy);
   color: var(--lightest-slate);
-  font-size: 16px;
+  font-family: var(--font-retro);
+  font-size: 24px;
+  -webkit-font-smoothing: none;
+  box-sizing: border-box;
+  clip-path: polygon(
+    0 6px, 6px 0,
+    calc(100% - 6px) 0, 100% 6px,
+    100% calc(100% - 6px), calc(100% - 6px) 100%,
+    6px 100%, 0 calc(100% - 6px)
+  );
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--green);
 }
 
 .contact-form textarea {
@@ -81,16 +102,17 @@
 .styled-button {
   color: var(--green);
   background-color: transparent;
-  border: 1px solid var(--green);
-  border-radius: 4px;
-  padding: 1rem 1.5rem;
-  font-family: var(--font-mono);
-  font-size: 16px;
+  border: 2px solid var(--green);
+  border-radius: 0;
+  padding: 0.9rem 1.75rem;
+  font-family: var(--font-pixel);
+  font-size: 14px;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s ease;
-  align-self: center; /* Align button to the center */
+  align-self: center;
+  -webkit-font-smoothing: none;
 }
 
 .styled-button:hover {
@@ -149,7 +171,9 @@
   color: var(--lightest-slate);
   text-decoration: none;
   transition: color 0.2s ease;
-  font-size: larger;
+  font-family: var(--font-retro);
+  font-size: 28px;
+  -webkit-font-smoothing: none;
 }
 
 .social-item a:hover {

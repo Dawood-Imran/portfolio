@@ -1,14 +1,17 @@
 :root {
-  --navy: #0a192f;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
-  --white: #e6f1ff;
-  --green: #34c759;
-  --font-sans: "Jura","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-  --font-mono: "Jura","Fira Code","Fira Mono","Roboto Mono",monospace;
+  --navy: #0c0c0c;
+  --light-navy: #111a11;
+  --lightest-navy: #1a2e1a;
+  --slate: #4d804d;
+  --light-slate: #80b380;
+  --lightest-slate: #b3e6b3;
+  --white: #ccf0cc;
+  --green: #00ff41;
+  --cyan: #39ff14;
+  --font-pixel: 'Press Start 2P', cursive;
+  --font-retro: 'VT323', monospace;
+  --font-sans: var(--font-retro);
+  --font-mono: var(--font-pixel);
 }
 
 body {
@@ -34,8 +37,10 @@ body {
   position: relative;
   margin: 10px 0 40px;
   width: 100%;
-  font-size: clamp(26px, 5vw, 32px);
+  font-family: var(--font-pixel);
+  font-size: clamp(18px, 3vw, 28px);
   color: var(--lightest-slate);
+  -webkit-font-smoothing: none;
 }
 
 .numbered-heading::before {
@@ -44,8 +49,8 @@ body {
   content: "0" counter(section) ".";
   margin-right: 10px;
   color: var(--green);
-  font-family: var(--font-mono);
-  font-size: clamp(16px, 3vw, 20px);
+  font-family: var(--font-pixel);
+  font-size: clamp(14px, 2vw, 18px);
   font-weight: 400;
 }
 

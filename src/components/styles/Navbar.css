@@ -3,8 +3,9 @@
   top: 0;
   width: 100%;
   height: 100px;
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: rgba(12, 12, 12, 0.92);
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--lightest-navy);
   z-index: 11;
   padding: 0 20px; /* Add padding to ensure it doesn't overflow */
 }
@@ -27,11 +28,13 @@
   align-items: center;
   padding: 10px 20px;
   color: var(--green);
-  font-family: 'Courier New', Courier, monospace; /* Changed font-family */
+  font-family: var(--font-pixel);
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   transition: all 0.25s ease;
+  text-shadow: 2px 2px 0px rgba(52, 199, 89, 0.3);
+  -webkit-font-smoothing: none;
 }
 
 .logo:hover {
@@ -64,7 +67,9 @@
   margin: 0 5px;
   position: relative;
   counter-increment: item 1;
-  font-size: 18px;
+  font-size: 28px;
+  font-family: var(--font-retro);
+  -webkit-font-smoothing: none;
 }
 
 .nav-links ol li a {
@@ -94,15 +99,24 @@
 .resume-button {
   color: var(--green);
   background-color: transparent;
-  border: 1px solid var(--green);
-  border-radius: 4px;
-  padding: 0.75rem 1rem;
-  font-family: var(--font-mono);
-  font-size: 16px;
+  border: 2px solid var(--green);
+  border-radius: 0;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-pixel);
+  font-size: 14px;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s ease;
+  -webkit-font-smoothing: none;
+  text-shadow: 1px 1px 0px rgba(52, 199, 89, 0.4);
+}
+
+.pixel-nav-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--lightest-slate);
+  image-rendering: pixelated;
 }
 
 .resume-button:hover {
