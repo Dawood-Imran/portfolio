@@ -121,7 +121,7 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: 80px 20px;
+    padding: 110px 20px 80px;
   }
 
   .heading {
@@ -174,7 +174,7 @@
 
 @media (max-width: 480px) {
   .contact {
-    padding: 80px 12px;
+    padding: 110px 12px 80px;
   }
 
   .heading {
@@ -280,3 +280,13 @@
 
 .toast-msg.success { color: var(--green); }
 .toast-msg.error   { color: #ff5f56; }
+
+@media (max-width: 600px) {
+  .terminal-toast {
+    bottom: 16px;
+    right: 12px;
+    left: 12px;
+    min-width: unset;
+    width: auto;
+  }
+}

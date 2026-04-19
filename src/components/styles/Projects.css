@@ -246,7 +246,7 @@
 }
 @media (max-width: 768px) {
   .projects {
-    padding: 80px 20px;
+    padding: 110px 20px 80px;
   }
 
   .projects-grid {
@@ -281,7 +281,7 @@
 
 @media (max-width: 480px) {
   .projects {
-    padding: 80px 12px;
+    padding: 110px 12px 80px;
   }
 
   .projects-grid {
