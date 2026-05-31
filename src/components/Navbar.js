@@ -13,7 +13,7 @@ const Navbar = () => {
   const downloadResume = () => {
     setResumeState('downloading');
     const link = document.createElement('a');
-    link.href = require('../Dawood_Resume.pdf');
+    link.href = require('../Dawood_Imran_Resume.pdf');
     link.download = 'Dawood_Imran_Resume.pdf';
     document.body.appendChild(link);
     link.click();
